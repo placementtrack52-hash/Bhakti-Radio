@@ -1,0 +1,38 @@
+{
+  "name": "Bhakti Radio — Sacred Devotional Music",
+  "short_name": "BhaktiRadio",
+  "description": "Stream sacred bhajans, mantras, and devotional music. Your digital prayer companion.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0D0808",
+  "theme_color": "#FF6B00",
+  "categories": ["music", "lifestyle", "spirituality"],
+  "icons": [
+    {
+      "src": "/images/default-cover.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/default-cover.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Radio Player",
+      "url": "/radio",
+      "description": "Live devotional radio stream"
+    },
+    {
+      "name": "Library",
+      "url": "/library",
+      "description": "Browse songs and prayer books"
+    }
+  ]
+}

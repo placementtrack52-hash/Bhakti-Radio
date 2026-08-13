@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Mahashivratri",
+    "slug": "mahashivratri",
+    "start": "2026-02-15",
+    "end": "2026-02-16",
+    "theme": "shiva",
+    "icon": "🔱",
+    "description": "The great night of Shiva celebrating cosmic balance and meditation."
+  },
+  {
+    "name": "Janmashtami",
+    "slug": "janmashtami",
+    "start": "2026-09-03",
+    "end": "2026-09-04",
+    "theme": "krishna",
+    "icon": "🦚",
+    "description": "Celebrating the birth of Lord Krishna in joy and love."
+  },
+  {
+    "name": "Navratri",
+    "slug": "navratri",
+    "start": "2026-10-09",
+    "end": "2026-10-17",
+    "theme": "devi",
+    "icon": "🌺",
+    "description": "Nine nights dedicated to the forms of Divine Mother Durga."
+  },
+  {
+    "name": "Ram Navami",
+    "slug": "ram-navami",
+    "start": "2026-04-14",
+    "end": "2026-04-15",
+    "theme": "ram",
+    "icon": "🚩",
+    "description": "Celebrating the descent of Lord Rama's righteousness."
+  },
+  {
+    "name": "Hanuman Jayanti",
+    "slug": "hanuman-jayanti",
+    "start": "2026-04-21",
+    "end": "2026-04-22",
+    "theme": "hanuman",
+    "icon": "🙏",
+    "description": "Commemorating the birth of Lord Hanuman, the peak of devotion."
+  },
+  {
+    "name": "Diwali",
+    "slug": "diwali",
+    "start": "2026-08-12",
+    "end": "2026-08-14",
+    "theme": "diwali",
+    "icon": "🪔",
+    "description": "Festival of lights, welcoming prosperity, wisdom, and peace.",
+    "activeOverride": true
+  }
+]

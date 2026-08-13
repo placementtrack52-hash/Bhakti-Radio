@@ -1,0 +1,28 @@
+[
+  {
+    "songId": 1,
+    "lyrics": [
+      { "time": 0, "text": "Shri Guru Charan Saroj Raj, Nija Manu Mukuru Sudhari" },
+      { "time": 10, "text": "Barnau Raghuvar Bimal Jash, Jo Dayaku Phala Chari" },
+      { "time": 20, "text": "Buddhi Heen Tanu Janike, Sumirau Pavan Kumar" },
+      { "time": 30, "text": "Bal Buddhi Vidya Dehu Mohi, Harahu Klesh Vikar" },
+      { "time": 45, "text": "Jai Hanuman Gyan Gun Sagar, Jai Kapis Tihun Lok Ujagar" },
+      { "time": 60, "text": "Ram Doot Atulit Bal Dhama, Anjani Putra Pavan Sut Nama" }
+    ]
+  },
+  {
+    "songId": 2,
+    "lyrics": [
+      { "time": 0, "text": "Om Namah Shivaya Har Har Bhole Namah Shivaya" },
+      { "time": 15, "text": "Rameshwaraya Shiva Rameshwaraya, Har Har Bhole Namah Shivaya" },
+      { "time": 30, "text": "Gangadharaya Shiva Gangadharaya, Har Har Bhole Namah Shivaya" }
+    ]
+  },
+  {
+    "songId": 3,
+    "lyrics": [
+      { "time": 0, "text": "Om Bhur Bhuvah Svah, Tat Savitur Varenyam" },
+      { "time": 15, "text": "Bhargo Devasya Dheemahi, Dhiyo Yo Nah Prachodayat" }
+    ]
+  }
+]

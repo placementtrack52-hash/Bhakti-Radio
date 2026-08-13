@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Prabhat Bhakti",
+    "icon": "🌅",
+    "start": "05:00",
+    "end": "08:00",
+    "description": "Morning Aarti and prayers to awaken your spirit."
+  },
+  {
+    "id": 2,
+    "name": "Bhakti Dhara",
+    "icon": "🌸",
+    "start": "08:00",
+    "end": "12:00",
+    "description": "Flow of divine stotrams and morning chants."
+  },
+  {
+    "id": 3,
+    "name": "Madhyan Bhakti",
+    "icon": "🎵",
+    "start": "12:00",
+    "end": "18:00",
+    "description": "Meditation and peaceful midday bhajans."
+  },
+  {
+    "id": 4,
+    "name": "Sandhya Aarti",
+    "icon": "🪔",
+    "start": "18:00",
+    "end": "21:00",
+    "description": "Evening lamps, full aartis, and praise chants."
+  },
+  {
+    "id": 5,
+    "name": "Shanti Raat",
+    "icon": "🌙",
+    "start": "21:00",
+    "end": "05:00",
+    "description": "Deep meditative Shiva chants, peace mantras, and quiet."
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Shiva",
+    "slug": "shiva",
+    "image": "/images/deities/shiva.webp",
+    "icon": "🔱",
+    "description": "The cosmic meditator and destroyer of ignorance."
+  },
+  {
+    "id": 2,
+    "name": "Krishna",
+    "slug": "krishna",
+    "image": "/images/deities/krishna.webp",
+    "icon": "🦚",
+    "description": "The embodiment of love, joy, and divine play."
+  },
+  {
+    "id": 3,
+    "name": "Ram",
+    "slug": "ram",
+    "image": "/images/deities/ram.webp",
+    "icon": "🚩",
+    "description": "The ideal king, warrior, and path of righteousness."
+  },
+  {
+    "id": 4,
+    "name": "Hanuman",
+    "slug": "hanuman",
+    "image": "/images/deities/hanuman.webp",
+    "icon": "🙏",
+    "description": "The ultimate symbol of devotion, strength, and humility."
+  },
+  {
+    "id": 5,
+    "name": "Devi",
+    "slug": "devi",
+    "image": "/images/deities/devi.webp",
+    "icon": "🌺",
+    "description": "The sacred feminine force and mother protector."
+  },
+  {
+    "id": 6,
+    "name": "Ganesh",
+    "slug": "ganesh",
+    "image": "/images/deities/ganesh.webp",
+    "icon": "🐘",
+    "description": "The lord of wisdom and remover of all obstacles."
+  }
+]

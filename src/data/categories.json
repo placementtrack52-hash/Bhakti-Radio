@@ -1,0 +1,10 @@
+[
+  { "name": "Aarti", "slug": "aarti", "icon": "🪔" },
+  { "name": "Bhajan", "slug": "bhajan", "icon": "🎵" },
+  { "name": "Mantra", "slug": "mantra", "icon": "🕉️" },
+  { "name": "Chalisa", "slug": "chalisa", "icon": "🙏" },
+  { "name": "Stotra", "slug": "stotra", "icon": "📜" },
+  { "name": "Kirtan", "slug": "kirtan", "icon": "🥁" },
+  { "name": "Meditation", "slug": "meditation", "icon": "🧘" },
+  { "name": "Shloka", "slug": "shloka", "icon": "📿" }
+]

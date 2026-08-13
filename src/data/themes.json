@@ -1,0 +1,40 @@
+{
+  "themes": [
+    {
+      "id": "morning",
+      "name": "Sunrise Morning",
+      "priority": 10,
+      "ambientSound": "bells"
+    },
+    {
+      "id": "day",
+      "name": "Bright Devotion Day",
+      "priority": 10,
+      "ambientSound": "river"
+    },
+    {
+      "id": "evening",
+      "name": "Evening Aarti Glow",
+      "priority": 10,
+      "ambientSound": "bells"
+    },
+    {
+      "id": "night",
+      "name": "Shiva Peace Night",
+      "priority": 10,
+      "ambientSound": "wind"
+    },
+    {
+      "id": "festival_mahashivratri",
+      "name": "Maha Shivratri Festival",
+      "priority": 100,
+      "ambientSound": "wind"
+    },
+    {
+      "id": "deity_shiva",
+      "name": "Kailash Shiva Devotion",
+      "priority": 50,
+      "ambientSound": "wind"
+    }
+  ]
+}

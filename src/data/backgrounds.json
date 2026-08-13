@@ -1,0 +1,24 @@
+{
+  "backgrounds": [
+    {
+      "id": "morning",
+      "gradient": "from-[#ffd080] via-[#c84800] to-[#1a0800]",
+      "overlayOpacity": 0.5
+    },
+    {
+      "id": "day",
+      "gradient": "from-[#ffd080] via-[#ffd080]/80 to-[#7a3a00]/30",
+      "overlayOpacity": 0.4
+    },
+    {
+      "id": "evening",
+      "gradient": "from-[#0d0808] via-[#6b1515] to-[#ff6b00]",
+      "overlayOpacity": 0.6
+    },
+    {
+      "id": "night",
+      "gradient": "from-[#02020f] via-[#120a2e] to-[#0a0520]",
+      "overlayOpacity": 0.7
+    }
+  ]
+}

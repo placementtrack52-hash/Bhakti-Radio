@@ -25,7 +25,7 @@ function DivaParticle({ style }: { style: React.CSSProperties }) {
   );
 }
 
-export default function HeroSection({ embedded = false }: { embedded?: boolean }) {
+export default function HeroSection() {
   const { togglePlay, playSong, isPlaying, currentSong } = usePlayer();
   const [mounted, setMounted] = useState(false);
 
@@ -57,14 +57,12 @@ export default function HeroSection({ embedded = false }: { embedded?: boolean }
 
   return (
     <section
-      className={`relative flex flex-col items-center justify-center overflow-hidden ${
-        embedded ? 'py-6 md:py-12' : 'min-h-screen'
-      }`}
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
       aria-label="Hero section"
       role="region"
     >
-      {/* Animated background (only when standalone) */}
-      {!embedded && <BackgroundManager overlay />}
+      {/* Animated background */}
+      <BackgroundManager overlay />
 
       {/* Diya particles */}
       {particles.map((p, i) => (

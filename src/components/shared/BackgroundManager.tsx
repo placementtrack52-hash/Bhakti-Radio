@@ -7,7 +7,6 @@ import DayRenderer from '@/components/backgrounds/DayRenderer';
 import EveningAartiRenderer from '@/components/backgrounds/EveningAartiRenderer';
 import NightRenderer from '@/components/backgrounds/NightRenderer';
 import ShivaPeaceRenderer from '@/components/backgrounds/ShivaPeaceRenderer';
-import CinematicEnvironment from '@/components/backgrounds/CinematicEnvironment';
 
 export default function BackgroundManager({
   className = '',
@@ -31,8 +30,6 @@ export default function BackgroundManager({
     }
 
     switch (themeKey) {
-      case 'cinematic':
-        return <CinematicEnvironment isReduced={isReduced} />;
       case 'morning':
         return <SunriseRenderer isReduced={isReduced} />;
       case 'day':
@@ -44,9 +41,10 @@ export default function BackgroundManager({
       case 'shiva':
       case 'deity_shiva':
       case 'festival_mahashivratri':
+        return <ShivaPeaceRenderer isReduced={isReduced} />;
       default:
-        // Render Cinematic Sacred World Environment
-        return <CinematicEnvironment isReduced={isReduced} />;
+        // Default to Standard Night renderer
+        return <NightRenderer isReduced={isReduced} />;
     }
   };
 

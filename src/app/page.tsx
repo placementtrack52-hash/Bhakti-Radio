@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
-import HeroSection from '@/components/home/HeroSection';
-import NowPlayingSection from '@/components/home/NowPlayingSection';
+import CinematicHomepage from '@/components/home/CinematicHomepage';
 
 export const metadata: Metadata = {
   title: '🪔 Bhakti Radio — Sacred Devotional Music & Bhajans',
@@ -9,10 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  return (
-    <>
-      <HeroSection />
-      <NowPlayingSection />
-    </>
-  );
+  return <CinematicHomepage />;
 }

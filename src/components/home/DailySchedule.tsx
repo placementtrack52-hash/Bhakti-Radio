@@ -41,7 +41,7 @@ function formatAMPM(timeStr: string): string {
   return `${h}:${mStr} ${ampm}`;
 }
 
-export default function DailySchedule() {
+export default function DailySchedule({ compact = false }: { compact?: boolean }) {
   const [currentTimeKolkata, setCurrentTimeKolkata] = useState<Date | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -108,6 +108,87 @@ export default function DailySchedule() {
       }
     }
   };
+
+  // Compact mode rendering for Left Sidebar / Mobile Drawers
+  if (compact) {
+    return (
+      <div className="space-y-4">
+        {/* Active Program Card */}
+        {activeProgram && (
+          <div className="glass-gold border border-[rgba(212,168,67,0.3)] rounded-2xl p-4 relative overflow-hidden shadow-lg">
+            <div className="flex items-center justify-between mb-2">
+              <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#FF8C38] flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B00] animate-ping" />
+                Live Program
+              </span>
+              <span className="text-xs text-[#D4A843] font-semibold">
+                {formatAMPM(activeProgram.start)} - {formatAMPM(activeProgram.end)}
+              </span>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="text-3xl" aria-hidden="true">{activeProgram.icon}</span>
+              <div className="min-w-0">
+                <h4 className="font-[family-name:var(--font-cinzel)] font-bold text-white text-base truncate">
+                  {activeProgram.name}
+                </h4>
+                <p className="text-xs text-[#A0896A] truncate">
+                  {activeProgram.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Up Next Program Preview */}
+        {nextProgram && (
+          <div className="glass border border-white/10 rounded-2xl p-4">
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-[10px] uppercase font-bold tracking-widest text-[#8A7258]">
+                Up Next ({minutesToNext}m)
+              </span>
+              <span className="text-xs text-[#D4A843]">
+                {formatAMPM(nextProgram.start)}
+              </span>
+            </div>
+            <div className="flex items-center gap-2.5 mt-1">
+              <span className="text-xl" aria-hidden="true">{nextProgram.icon}</span>
+              <span className="text-sm font-semibold text-white truncate">{nextProgram.name}</span>
+            </div>
+          </div>
+        )}
+
+        {/* All Daily Schedule List (Compact Scrollable) */}
+        <div className="space-y-2 pt-2">
+          <p className="text-xs font-[family-name:var(--font-cinzel)] font-semibold text-[#D4A843] uppercase tracking-wider px-1">
+            Today's Timeline (IST)
+          </p>
+          <div className="space-y-1.5 max-h-56 overflow-y-auto pr-1 scrollbar-thin">
+            {scheduleData.map((item, idx) => {
+              const isLive = idx === activeProgramIndex;
+              return (
+                <div
+                  key={item.id}
+                  className={`flex items-center justify-between p-2.5 rounded-xl border text-xs transition-all ${
+                    isLive
+                      ? 'glass-gold border-[#D4A843] text-white font-bold'
+                      : 'glass border-white/5 text-[#A0896A] opacity-75'
+                  }`}
+                >
+                  <div className="flex items-center gap-2 truncate">
+                    <span>{item.icon}</span>
+                    <span className="truncate">{item.name}</span>
+                  </div>
+                  <span className="flex-shrink-0 text-[10px] text-[#D4A843]">
+                    {formatAMPM(item.start)}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <section

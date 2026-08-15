@@ -91,12 +91,8 @@ export default function HeroSection() {
             <span className="w-8 h-px bg-[#d4a843] opacity-60" aria-hidden="true" />
           </div>
           <h1
-            className="font-[family-name:var(--font-cinzel)] font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-glow-gold"
+            className="font-[family-name:var(--font-cinzel)] font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white drop-shadow-md"
             style={{
-              background: 'linear-gradient(135deg, #D4A843 0%, #FF6B00 40%, #D4A843 70%, #F5E6C0 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
               lineHeight: 1.1,
             }}
           >

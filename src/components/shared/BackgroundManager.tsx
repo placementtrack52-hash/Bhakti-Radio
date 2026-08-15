@@ -18,10 +18,17 @@ export default function BackgroundManager({
         object-cover and object-center ensure it is mobile responsive
       */}
       <Image
+        src="/backgrounds/background_mobile.png"
+        alt="Bhakti Radio Background Mobile"
+        fill
+        className="block object-cover object-center md:hidden"
+        priority
+      />
+      <Image
         src="/backgrounds/background.png"
         alt="Bhakti Radio Background"
         fill
-        className="object-cover object-center"
+        className="hidden object-cover object-center md:block"
         priority
       />
 

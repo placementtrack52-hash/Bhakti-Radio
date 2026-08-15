@@ -74,7 +74,7 @@ export default function HeroSection() {
         {/* Sanskrit blessing */}
         <div className="mb-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
           <span
-            className="text-4xl md:text-5xl font-[family-name:var(--font-noto)] text-[rgba(212,168,67,0.8)]"
+            className="text-4xl md:text-5xl font-[family-name:var(--font-noto)] text-white/90 drop-shadow-md"
             aria-label="Om symbol"
           >
             ॐ
@@ -84,11 +84,11 @@ export default function HeroSection() {
         {/* Main title */}
         <div className="mb-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           <div
-            className="inline-flex items-center gap-2 text-xs md:text-sm font-[family-name:var(--font-cinzel)] tracking-[0.3em] text-[#d4a843] uppercase mb-4"
+            className="inline-flex items-center gap-2 text-xs md:text-sm font-[family-name:var(--font-cinzel)] tracking-[0.3em] text-white drop-shadow-md uppercase mb-4"
           >
-            <span className="w-8 h-px bg-[#d4a843] opacity-60" aria-hidden="true" />
+            <span className="w-8 h-px bg-white opacity-60" aria-hidden="true" />
             Sacred Devotional Radio
-            <span className="w-8 h-px bg-[#d4a843] opacity-60" aria-hidden="true" />
+            <span className="w-8 h-px bg-white opacity-60" aria-hidden="true" />
           </div>
           <h1
             className="font-[family-name:var(--font-cinzel)] font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-white drop-shadow-md"

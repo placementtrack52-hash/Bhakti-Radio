@@ -1,12 +1,6 @@
 'use client';
 
-import { useTheme } from '@/hooks/useTheme';
-import { useAnimation } from '@/hooks/useAnimation';
-import SunriseRenderer from '@/components/backgrounds/SunriseRenderer';
-import DayRenderer from '@/components/backgrounds/DayRenderer';
-import EveningAartiRenderer from '@/components/backgrounds/EveningAartiRenderer';
-import NightRenderer from '@/components/backgrounds/NightRenderer';
-import ShivaPeaceRenderer from '@/components/backgrounds/ShivaPeaceRenderer';
+import Image from 'next/image';
 
 export default function BackgroundManager({
   className = '',
@@ -17,48 +11,21 @@ export default function BackgroundManager({
   overlay?: boolean;
   deityOverride?: string;
 }) {
-  const { resolvedTheme } = useTheme();
-  const { isReduced, backgroundEffects } = useAnimation();
-
-  // Pick resolved background component
-  const themeKey = deityOverride ? deityOverride.toLowerCase() : resolvedTheme;
-
-  const renderBackground = () => {
-    // If background effects are disabled, fallback to simple static night gradient
-    if (!backgroundEffects) {
-      return <div className="absolute inset-0 bg-[#0d0808]" />;
-    }
-
-    switch (themeKey) {
-      case 'morning':
-        return <SunriseRenderer isReduced={isReduced} />;
-      case 'day':
-      case 'afternoon':
-        return <DayRenderer isReduced={isReduced} />;
-      case 'evening':
-        return <EveningAartiRenderer isReduced={isReduced} />;
-      case 'night':
-      case 'shiva':
-      case 'deity_shiva':
-      case 'festival_mahashivratri':
-        return <ShivaPeaceRenderer isReduced={isReduced} />;
-      default:
-        // Default to Standard Night renderer
-        return <NightRenderer isReduced={isReduced} />;
-    }
-  };
-
   return (
     <div className={`absolute inset-0 -z-10 ${className}`} aria-hidden="true">
-      {/* Background layer */}
-      <div className="absolute inset-0 bg-[#0d0808]" />
+      {/* 
+        Using Next.js Image component for automatic optimization 
+        object-cover and object-center ensure it is mobile responsive
+      */}
+      <Image
+        src="/backgrounds/background.png"
+        alt="Bhakti Radio Background"
+        fill
+        className="object-cover object-center"
+        priority
+      />
 
-      {/* Dynamic resolved render with transition fade effects */}
-      <div className="absolute inset-0 transition-opacity duration-[6000ms] ease-in-out">
-        {renderBackground()}
-      </div>
-
-      {/* Screen read helper overlay */}
+      {/* Screen read helper overlay to ensure text over the background is readable */}
       {overlay && (
         <div
           className="absolute inset-0"

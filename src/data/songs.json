@@ -1,8 +1,5 @@
 [
   {
-   
-  
-    
     "id": 1,
     "title": "Shiv Amrit Vahni",
     "artist": "Singer Name",
@@ -11,6 +8,28 @@
     "duration": "49:00",
     "deity": "Shiva",
     "tags": ["mantra", "shiva", "meditation"],
+    "featured": true
+  },
+   {
+    "id": 2,
+    "title": "Durga Chalisa",
+    "artist": "Anuradha Paudwal",
+    "audio": "/audio/Durga Chalisa with Lyrics By Anuradha Paudwal [Full Song] I DURGA CHALISA DURGA KAWACH.mp3",
+    "cover": "/images/my-new-bhajan.webp",
+    "duration": "08:24",
+    "deity": "Durga",
+    "tags": ["mantra", "Durga", "meditation"],
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Durga Chalisa",
+    "artist": "Singer",
+    "audio": "/audio/Durga Kavach _ श्री दुर्गा रक्षा कवच _ Durga Maa Songs _ Mata Ke Gane _ Durga Kavach In Hindi.mp3",
+    "cover": "/images/my-new-bhajan.webp",
+    "duration": "17:29",
+    "deity": "Durga",
+    "tags": ["mantra", "Durga", "meditation"],
     "featured": true
   }
 ]
